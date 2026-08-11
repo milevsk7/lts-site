@@ -110,11 +110,11 @@ p:last-child{margin-bottom:0}
 .nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1.25rem;padding-top:.9rem;padding-bottom:.9rem}
 .brand{display:inline-flex;align-items:center;text-decoration:none;color:var(--navy)}
-.brand-logo{width:148px;height:auto;display:block}
-.brand-foot .brand-logo{width:172px}
-@media (max-width:920px){.brand-logo{width:124px}}
-.nav-links{display:flex;gap:1.5rem;align-items:center;list-style:none;margin:0;padding:0}
-.nav-links a{font-size:.93rem;color:var(--ink);text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent;transition:border-color .18s ease,color .18s ease}
+.brand-logo{width:132px;height:auto;display:block}
+.brand-foot .brand-logo{width:164px}
+@media (max-width:920px){.brand-logo{width:112px}}
+.nav-links{display:flex;gap:1.35rem;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:.93rem;white-space:nowrap;color:var(--ink);text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent;transition:border-color .18s ease,color .18s ease}
 .nav-links a:hover,.nav-links a:focus-visible{color:var(--blue);border-color:var(--blue)}
 .nav-links a.here{color:var(--blue);border-color:var(--amber)}
 .nav-cta{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:.7rem 1.05rem;background:var(--blue);color:var(--white);border-radius:3px}
@@ -181,6 +181,17 @@ p:last-child{margin-bottom:0}
 .pills{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.6rem 0 0;padding:0;list-style:none}
 .pills li{font-family:var(--mono);font-size:.71rem;letter-spacing:.05em;padding:.5rem .8rem;border:1px solid var(--sky-2);background:var(--sky);border-radius:3px;color:var(--navy)}
 .deep .pills li{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#E4E8F1}
+
+
+/* ---------- photos ---------- */
+.shot{
+  width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;
+  border-radius:var(--radius);border:1px solid var(--line);
+  margin-top:1.6rem;background:var(--sky);
+}
+.shot-tall{aspect-ratio:3/4}
+.shot-wide{aspect-ratio:16/9}
+.deep .shot{border-color:rgba(255,255,255,.18)}
 
 /* ---------- cards ---------- */
 .cards{display:grid;gap:1.4rem;margin-top:2.6rem}
